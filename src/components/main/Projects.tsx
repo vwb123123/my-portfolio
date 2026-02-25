@@ -3,6 +3,9 @@ import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import Culita from "../../assets/CULITA_IMG.png";
 import Portfolio from "../../assets/portfolioIMG.png";
+import wetube from "../../assets/WETUBE.png";
+import pokemon from "../../assets/poketmon.png";
+import coin from "../../assets/coin.png";
 
 interface ProjectType {
     title: string;
@@ -47,6 +50,53 @@ const projectData: ProjectType[] = [
         image: Portfolio,
         link: "#",
         github: "https://github.com/vwb123123/my-portfolio",
+    },
+    {
+        title: "WETUBE",
+        description: "Vite와 React 19를 활용한 비디오 스트리밍 플랫폼입니다.",
+        fullDetail:
+            "사용자 중심의 비디오 공유 경험을 제공하기 위해 개발된 클론 프로젝트입니다. 동영상 업로드, 실시간 댓글, 좋아요 기능 및 관리자 페이지를 통한 회원 관리를 포함하고 있습니다.",
+        tags: ["React 19", "Vite", "Zustand", "Tailwind v4"],
+        period: "2025.12 ~ 2025.12",
+        features:
+            "동영상 CRUD, 실시간 댓글 시스템, 관리자 대시보드, 인증 시스템",
+        tech: "React, Typescript, Tailwindcss, Axios, Zustand",
+        contribution: "100%",
+        image: wetube,
+        link: "https://lecture-wetube-frontend-blond.vercel.app/",
+        github: "https://github.com/vwb123123/lecture-wetube-frontend",
+    },
+    {
+        title: "Pokédex",
+        description:
+            "PokeAPI와 TanStack Query를 활용한 고성능 포켓몬 도감 플랫폼입니다.",
+        fullDetail:
+            "사용자에게 몰입감 있는 도감 경험을 제공하기 위해 개발된 프로젝트입니다. Infinite Scroll을 통한 끊김 없는 데이터 로딩, 실시간 검색 필터링, 그리고 복합 API 호출을 통한 다단계 진화 체인 시각화 기능을 포함하고 있습니다.",
+        tags: ["React 19", "Vite", "TanStack Query", "Styled-components"],
+        period: "2026.02 ~ 2026.02",
+        features:
+            "무한 스크롤(Infinite Scroll), 실시간 포켓몬 검색, 타입별 동적 테마 적용, 상세 능력치 시각화 및 진화 계통도 추적",
+        tech: "React 19, TypeScript, TanStack Query, Styled-components, Axios",
+        contribution: "100%",
+        image: pokemon,
+        link: "https://poketmon-dex-five.vercel.app/",
+        github: "https://github.com/vwb123123/poketmon-dex",
+    },
+    {
+        title: "Crypto Tracker",
+        description:
+            "CoinLore API를 활용하여 전 세계 암호화폐 시세를 실시간으로 추적하는 대시보드입니다.",
+        fullDetail:
+            "복잡한 금융 데이터를 사용자가 한눈에 파악할 수 있도록 설계된 데이터 트래킹 웹 애플리케이션입니다. 실시간 검색 필터링 로직과 모달 시스템을 통한 상세 데이터 바인딩을 구현하였으며, CSS 모듈을 활용하여 세련된 UI를 적용했습니다.",
+        tags: ["React", "TypeScript", "CSS Modules", "REST API"],
+        period: "2026.02 ~ 2026.02",
+        features:
+            "실시간 시세 데이터 페칭, 이름/심볼 기반 검색 필터링, 코인 상세 정보 모달(변동률, 시가총액 등), 로딩 스피너 및 마우스 호버 인터랙션",
+        tech: "React, TypeScript, CSS Modules, Fetch API",
+        contribution: "100%",
+        image: coin,
+        link: "https://lecture-coin-tracker.vercel.app/",
+        github: "https://github.com/vwb123123/lecture-coin-tracker",
     },
 ];
 
