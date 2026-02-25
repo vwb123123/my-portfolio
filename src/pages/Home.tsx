@@ -14,7 +14,7 @@ function Home() {
             <div className={"relative z-10"}>
                 <Header />
             </div>
-            <main>
+            <main className={"pt-30"}>
                 <div className={"w-[90dvw] mx-auto"}>
                     <div>
                         <About />
